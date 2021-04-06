@@ -36,7 +36,6 @@ savefilename = "default.csv"
 path = ".\\data\\buf"
 
 files = glob.glob(path+"\\*")
-print(files)
 lst = [HEADER]
 for file in files:
     with open(file) as f:
@@ -47,6 +46,4 @@ df = pd.DataFrame(lst)
 if len(sys.argv)>1:
     savefilename = sys.argv[1]
     
-
-print(df)
 df.to_csv(".\\data\\"+savefilename, header=False, index=False)

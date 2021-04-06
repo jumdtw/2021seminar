@@ -9,8 +9,8 @@ TEST_PATH = '.\\data\\test.csv'
 ## サンプリングサイズ
 N = 100
 
-LABEL_NORMAL = 0
-LABEL_ATTACK = 1
+LABEL_NORMAL = 1
+LABEL_ATTACK = -1
 
 # カテゴリ値の"サービス"を使ってみます
 FEATURES = [
