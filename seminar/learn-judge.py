@@ -15,8 +15,8 @@ LABEL_ATTACK = 1
 # カテゴリ値の"サービス"を使ってみます
 FEATURES = [
     'Duration',  
-    'Src_bytes',
-    'Dst_bytes',
+    'Source bytes',
+    'Destination bytes',
     'Count',
     'Same_srv_rate',
     'Serror_rate',

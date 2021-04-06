@@ -8,14 +8,14 @@ import glob
 HEADER = [
     "Duration",
     "Service",
-    "Source byte",
-    "Destination byte",
+    "Source bytes",
+    "Destination bytes",
     "Count",
     "Same_srv_rate",
     "Serror_rate",
     "Srv_serror_rate",
     "Dst_host_count",
-    "Dst_hot_srv_count",
+    "Dst_host_srv_count",
     "Dst_host_same_src_port_rate",
     "Dst_host_serror_rate",
     "Dst_host_srv_serror_rate",
@@ -29,7 +29,7 @@ HEADER = [
     "Destination_IP_Address",
     "Destination_Port_Number",
     "Start_Time",
-    "Duration"
+    "Protocol"
 ]
 
 savefilename = "default.csv"
