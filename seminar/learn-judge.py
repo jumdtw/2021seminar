@@ -35,11 +35,13 @@ def read_dataset(path, n=N):
     df = pd.read_csv(TRAIN_PATH)
     # データフレームのうちラベルが正常のもの
     normal = df[df.Label == LABEL_NORMAL]
+    print(normal)
     # 正常なものについて使用する特徴量のみを切り出してサンプリング
     normal = normal.loc[:, FEATURES].sample(n)
 
     # データフレームのうちラベルが攻撃のもの
     attack = df[df.label == LABEL_ATTACK]
+    print(attack)
     # 攻撃について使用する特徴量のみを切り出してサンプリング
     # クラスごとのサンプル数が不均衡なのは望ましくないので同数にします
     attack = attack.loc[:, FEATURES].sample(n)
