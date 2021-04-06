@@ -14,19 +14,19 @@ LABEL_ATTACK = 1
 
 # カテゴリ値の"サービス"を使ってみます
 FEATURES = [
-    'duration',  
-    'src_bytes',
-    'dst_bytes',
-    'count',
-    'same_srv_rate',
-    'serror_rate',
-    'srv_serror_rate',
-    'dst_host_count',
-    'dst_host_srv_count',
-    'dst_host_same_src_port_rate',
-    'dst_host_serror_rate',
-    'dst_host_srv_serror_rate',
-    'service'
+    'Duration',  
+    'Src_bytes',
+    'Dst_bytes',
+    'Count',
+    'Same_srv_rate',
+    'Serror_rate',
+    'Srv_serror_rate',
+    'Dst_host_count',
+    'Dst_host_srv_count',
+    'Dst_host_same_src_port_rate',
+    'Dst_host_serror_rate',
+    'Dst_host_srv_serror_rate',
+    'Service'
 ]
 
 
