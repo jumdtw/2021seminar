@@ -1,14 +1,13 @@
 from __future__ import print_function
-
 import pandas as pd
 from sklearn import metrics
 from sklearn.tree import DecisionTreeClassifier
 
-TRAIN_PATH = 'train.csv'
-TEST_PATH = 'test.csv'
+TRAIN_PATH = '.\\data\\default.csv'
+TEST_PATH = '.\\data\\test.csv'
 
 ## サンプリングサイズ
-N = 10000
+N = 100
 
 LABEL_NORMAL = 0
 LABEL_ATTACK = 1
