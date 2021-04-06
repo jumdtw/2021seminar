@@ -34,7 +34,7 @@ FEATURES = [
 def read_dataset(path, n=N):
     df = pd.read_csv(TRAIN_PATH)
     # データフレームのうちラベルが正常のもの
-    normal = df[df.label == LABEL_NORMAL]
+    normal = df[df.Label == LABEL_NORMAL]
     # 正常なものについて使用する特徴量のみを切り出してサンプリング
     normal = normal.loc[:, FEATURES].sample(n)
 
