@@ -7,7 +7,7 @@ from sklearn.tree import DecisionTreeClassifier
 TRAIN_PATH = 'train.csv'
 TEST_PATH = 'test.csv'
 
-# サンプリングサイズ
+## サンプリングサイズ
 N = 10000
 
 LABEL_NORMAL = 0
