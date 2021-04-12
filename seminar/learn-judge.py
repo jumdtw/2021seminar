@@ -10,8 +10,8 @@ if len(sys.argv) < 2:
     print("引数エラー\n引数の個数を確認してください。\npython learn-judge.py learndata judgedata")
     exit()
 
-TRAIN_PATH = '.\\data\\' + sys.argv[1]
-TEST_PATH = '.\\data\\' + sys.argv[2]
+TRAIN_PATH = './data/' + sys.argv[1]
+TEST_PATH = './data/' + sys.argv[2]
 
 ## サンプリングサイズ
 N = 10000
