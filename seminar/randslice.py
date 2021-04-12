@@ -3,7 +3,7 @@ import csv
 import sys
 import glob
 
-# python3 randslice.py savefilename 
+# python randslice.py savefilename 
 
 HEADER = [
     "Duration",
@@ -32,7 +32,7 @@ HEADER = [
     "Protocol"
 ]
 
-savefilename = "default.csv"
+savefilename = ".\\data\\default.csv"
 path = ".\\data\\buf"
 
 files = glob.glob(path+"\\*")

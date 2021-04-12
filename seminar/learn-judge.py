@@ -1,10 +1,17 @@
 from __future__ import print_function
+import sys
 import pandas as pd
 from sklearn import metrics
 from sklearn.tree import DecisionTreeClassifier
 
-TRAIN_PATH = '.\\data\\default.csv'
-TEST_PATH = '.\\data\\test.csv'
+# python learn-judge.py learndata judgedata
+
+if len(sys.argv) < 2:
+    print("引数エラー\n引数の個数を確認してください。\npython learn-judge.py learndata judgedata")
+    exit()
+
+TRAIN_PATH = '.\\data\\' + sys.argv[1]
+TEST_PATH = '.\\data\\' + sys.argv[2]
 
 ## サンプリングサイズ
 N = 10000
