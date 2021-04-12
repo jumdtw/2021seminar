@@ -35,7 +35,7 @@ HEADER = [
 savefilename = ".\\data\\default.csv"
 path = ".\\data\\buf"
 
-files = glob.glob(path+"\\*")
+files = glob.glob(path+"\\*.txt")
 print(files)
 lst = [HEADER]
 for file in files:
