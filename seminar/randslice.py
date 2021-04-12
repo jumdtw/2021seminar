@@ -32,7 +32,7 @@ HEADER = [
     "Protocol"
 ]
 
-savefilename = ".\\data\\default.csv"
+savefilename = "./data/default.csv"
 
 files = glob.glob("./data/buf/*.txt")
 print(files)
@@ -46,4 +46,4 @@ df = pd.DataFrame(lst)
 if len(sys.argv)>1:
     savefilename = sys.argv[1]
     
-df.to_csv(".\\data\\"+savefilename, header=False, index=False)
+df.to_csv("./data/"+savefilename, header=False, index=False)
