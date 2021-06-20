@@ -32,7 +32,7 @@ HEADER = [
     "Protocol"
 ]
 
-savefilename = "./data/default.csv"
+savefilename = "default.csv"
 
 files = glob.glob("./data/buf/*.txt")
 print(files)
