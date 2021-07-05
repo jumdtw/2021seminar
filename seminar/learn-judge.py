@@ -50,7 +50,7 @@ FEATURES = [
 
 # CSV を読み込んでラベルとともに返す
 def read_dataset(path, n=N):
-    df = pd.read_csv(TRAIN_PATH)
+    df = pd.read_csv(path)
     # データフレームのうちラベルが正常のもの
     normal = df[df.Label == LABEL_NORMAL]
     # 正常なものについて使用する特徴量のみを切り出してサンプリング
