@@ -40,7 +40,12 @@ lst = [HEADER]
 for file in files:
     with open(file) as f:
         a = [e for e in csv.reader(f, delimiter="\t")]
+        for i, b in enumerate(a):
+            if len(b)!=len(HEADER):
+                a.pop(i)
+
         lst = lst + a
+    
 df = pd.DataFrame(lst)
 
 if len(sys.argv)>1:
